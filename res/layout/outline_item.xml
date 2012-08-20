@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:gravity="left"
@@ -21,7 +22,7 @@
         android:id="@+id/dateInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:visibility="invisible" >
     </TextView>
