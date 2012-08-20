@@ -133,10 +133,10 @@ public class OutlineActivity extends SherlockActivity
         if (cursor == null || cursor.getCount() < 1) {
             emptylist = true;
             LinkedHashMap<String, String> lhm = new LinkedHashMap<String, String>();
-            lhm.put("Synchronize", "Fetch your org data");
-            lhm.put("Settings", "Configure MobileOrg");
-            lhm.put("Capture", "Capture a new note");
-            lhm.put("Website", "Visit the MobileOrg Wiki");
+            lhm.put(getString(R.string.capture), getString(R.string.capture_a_new_note));
+            lhm.put(getString(R.string.synchronize), getString(R.string.fetch_your_org_data));
+            lhm.put(getString(R.string.settings), getString(R.string.configure_mobileorg));
+            lhm.put(getString(R.string.website), getString(R.string.visit_the_mobileorg_wiki));
             listView.setAdapter(new HashMapAdapter(lhm, this));
         }
         else {
@@ -410,9 +410,9 @@ public class OutlineActivity extends SherlockActivity
 		}
 	};
 	
-    private static final int SYNC_OPTION = 0;
-    private static final int SETTINGS_OPTION = 1;
-    private static final int CAPTURE_OPTION = 2;
+	private static final int CAPTURE_OPTION = 0;
+    private static final int SYNC_OPTION = 1;
+    private static final int SETTINGS_OPTION = 2;
     private static final int WEBSITE_OPTION = 3;
 
     private class HashMapAdapter extends BaseAdapter {
@@ -423,7 +423,7 @@ public class OutlineActivity extends SherlockActivity
         public HashMapAdapter(LinkedHashMap<String, String> data, OutlineActivity act){
             mData  = data;
             mKeys = mData.keySet().toArray(new String[data.size()]);
-            mInflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         @Override
