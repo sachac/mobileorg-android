@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="3"
-        android:targetSdkVersion="8" />
+        android:targetSdkVersion="14" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -73,7 +73,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
 
-                <action android:name="com.matburt.mobileorg.Synchronizer.action.SYNC_UPDATE" />
+                
+            </intent-filter>
+            <intent-filter>
+            	<action android:name="com.matburt.mobileorg.Synchronizer.action.SYNC_UPDATE" />
             </intent-filter>
         </activity>
         <activity

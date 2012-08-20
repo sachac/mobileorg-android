@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginBottom="4dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
       android:layout_below="@id/sl_item" >
     </TextView>
